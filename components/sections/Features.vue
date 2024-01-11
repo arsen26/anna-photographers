@@ -4,7 +4,7 @@
       <v-row>
         <v-col class="text-center">
           <h2 class="text-h4 text-md-h3 text-center font-weight-black">
-            RENI KARIT
+            Build your website with this Theme
           </h2>
           <div
             class="text-h5 text-md-h4 text-center font-weight-black py-3 mb-10"

@@ -5,22 +5,12 @@
         <v-list-item-group v-for="(item, i) in items" :key="i" color="primary">
           <v-list-item v-if="!item.submenu" :to="item.to">
             <v-list-item-action>
-              <svg-icon
-                style="width: 50px; height: 50px"
-                class="icon-style"
-                type="mdi"
-                :path="item.path"
-              >
-                <template v-if="item.icon === 'mdi-account'">{{
-                  item.title
-                }}</template>
-              </svg-icon>
+              <v-icon>{{ item.icon }}</v-icon>
             </v-list-item-action>
             <v-list-item-content>
               <v-list-item-title v-text="item.title.toUpperCase()" />
             </v-list-item-content>
           </v-list-item>
-
           <v-list-group v-else :prepend-icon="item.icon" no-action>
             <template v-slot:activator>
               <v-list-item-content>
@@ -68,14 +58,6 @@
                 style="height: auto"
                 v-on="on"
               >
-                <svg-icon
-                  style="width: 50px; height: 50px"
-                  class="icon-style"
-                  type="mdi"
-                  :path="variant.path"
-                >
-                  {{ name.icon }}</svg-icon
-                >
                 {{ name.title }}
                 <v-icon right small class="mx-0"> mdi-chevron-down </v-icon>
               </v-btn>
@@ -114,14 +96,7 @@
 </template>
 
 <script>
-import SvgIcon from '@jamescoyle/vue-icon'
-import * as mdijs from '@mdi/js'
-
 export default {
-  components: {
-    SvgIcon,
-  },
-
   data() {
     return {
       clipped: false,
@@ -134,12 +109,12 @@ export default {
         },
         {
           icon: 'mdi-account',
-          title: 'Rreth nesh',
+          title: 'About',
           to: '/about',
         },
         {
           icon: 'mdi-tools',
-          title: 'Sherbimet Tona',
+          title: 'Services',
           to: '/services',
           submenu: [
             {
@@ -173,9 +148,8 @@ export default {
           ],
         },
         {
-          icon: 'mdi-account',
-          path: mdijs.mdiAccount,
-          title: 'Anna Dekor',
+          icon: 'mdi-cash-usd',
+          title: 'Pricing',
           to: '/pricing',
         },
         {
