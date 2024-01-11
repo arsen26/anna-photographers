@@ -22,8 +22,9 @@
               {{ carousel.heading.toUpperCase() }}
             </div>
             <p class="mb-5 white--text">{{ carousel.subHeading }}</p>
-            <v-btn :x-large="$vuetify.breakpoint.smAndUp" class="my-3 primary"
-              >Get Started</v-btn
+            <v-btn :x-large="$vuetify.breakpoint.smAndUp" class="my-3 primary">
+              <v-icon left large color="white">mdi-phone</v-icon>
+              Rezervoni tani</v-btn
             >
             <span class="mx-2 my-4"></span>
             <v-btn
@@ -32,8 +33,8 @@
               class="my-3"
               outlined
               dark
-              ><v-icon left large color="primary">mdi-play</v-icon>Learn
-              More</v-btn
+              ><v-icon left large color="primary">mdi-instagram</v-icon>Prova
+              teknike</v-btn
             >
           </div>
         </v-container>
@@ -48,28 +49,28 @@ export default {
     return {
       carouselsData: [
         {
-          src: 'pexels-andrea-piacquadio-3884440.jpg',
-          heading: ' PROMOTE YOUR BUSINESS WITH US ',
+          src: 'background1.jpg',
+          heading: 'Photoshooting Në Ambientet tona',
           subHeading:
-            'Infographic hypotheses influencer user experience Long madel ture gen-z paradigm shift client partner network product seilans solve management influencer analytics leverage virality. incubator seed round massmarket. buyer agile development growth hacking business-to-consumer ecosystem ',
+            'Anna Photographers sjellë një eksperiencë unike të photoshooting-ut në studio, ku eleganca takon talentin. Në ambientet tona të veçanta, kujtimet tuaja bëhen pjesë e një historie të bukur vizuale.',
         },
         {
           src: 'pexels-peter-olexa-4012966.jpg',
-          heading: ' LOREM IPSUM DOLOR SIT AMET CONSEETU',
+          heading: ' Secili Moment Shndërrohet në Art ',
           subHeading:
-            'Litora a interdum primis. Lectus facilisi sit cum arcu aliquam velit imperdiet sapien suspendisse at vel facilisis. Facilisis metus, curae; nibh mi orci et. Fringilla sociis magna rutrum bibendum arcu.',
+            'Zhyteni në një botë të imazheve të paharrueshme me shërbimet fotografi të ofruara nga Anna Photographers. Studio jonë e veçantë ofron ambiente të përshtatshme për çdo lloj seti fotografik, duke bërë secilin moment të jete një vepër arti.',
         },
         {
           src: 'pexels-thirdman-5961072.jpg',
-          heading: ' Build your website with this Theme ',
+          heading: ' Photoshooting ne ambjentet e studios sone ',
           subHeading:
-            'Tellus cum turpis natoque id justo interdum tincidunt faucibus aptent congue pellentesque. Proin luctus orci netus! Scelerisque parturient cursus donec parturient et, luctus aptent habitant aliquet felis. Sapien placerat ultricies.',
+            'Studio Fotografike Anna Photographers është një oaz i fotografisë, ku çdo moment bëhet një përrallë e bukur. Me pasion për detajet dhe shpirt artistik, ofrojmë një eksperiencë të jashtëzakonshme të photoshooting-ut. Ambientet tona të studios janë dizajnuar me kujdes për një atmosferë të rehatshme dhe inspiruese. Me teknologji moderne dhe ekip të talentuar, jemi të përkushtuar për të kapur shenjat më të bukura dhe emocionet më autentike të çdo momenti.',
         },
         {
           src: 'pexels-andrea-piacquadio-3830745.jpg',
-          heading: ' URNA TINCIDUNT MATTIS TORTOR ',
+          heading: ' Editim te fotove tuaja deri ne detaje ',
           subHeading:
-            'Dapibus cras, ligula suspendisse potenti himenaeos mus volutpat pulvinar est facilisi. Vehicula malesuada parturient euismod litora mollis penatibus. Penatibus cum nullam facilisi enim nisi ac suspendisse. Ullamcorper ad amet netus.',
+            'Studio Fotografike Anna Photographers është burimi juaj i besueshëm për një editim të fotos së jashtëzakonshëm. Me pasion dhe kujdes të veçantë, synojmë të përmirësojmë çdo detaj. Qëllimi ynë i vetëm është të sjellim kujtimet tuaja në nivele të reja të shkëlqimit përmes aftësisë sonë të pasur në editim fotografik.',
         },
       ],
     }

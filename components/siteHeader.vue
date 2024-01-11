@@ -35,11 +35,9 @@
 
     <v-app-bar fixed app hide-on-scroll height="64" elevate-on-scroll>
       <v-app-bar-nav-icon class="hidden-md-and-up" @click="drawer = true" />
-      <nuxt-link to="/" class="d-flex">
-        <Logo />
-      </nuxt-link>
+      <nuxt-link to="/" class="d-flex"> </nuxt-link>
+      <v-img :width="40" :height="70" aspect-ratio="16/9" :src="image"> </v-img>
       <v-spacer />
-
       <template v-for="(name, menuitem) in items">
         <template v-if="name.submenu">
           <v-menu
@@ -99,7 +97,9 @@
 export default {
   data() {
     return {
+      image: require('@/static/annalogo.png'),
       clipped: false,
+
       drawer: false,
       items: [
         {
@@ -109,59 +109,64 @@ export default {
         },
         {
           icon: 'mdi-account',
-          title: 'About',
+          title: 'Rreth nesh',
           to: '/about',
         },
         {
-          icon: 'mdi-tools',
-          title: 'Services',
-          to: '/services',
-          submenu: [
-            {
-              title: 'Services Page',
-              to: '/services',
-            },
-            {
-              title: 'Static Websites',
-              to: '/#',
-            },
-            {
-              title: 'Mobile Applications',
-              to: '/#',
-            },
-            {
-              title: 'Corporate websites',
-              to: '/#',
-            },
-            {
-              title: 'Editorial Sites',
-              to: '/#',
-            },
-            {
-              title: 'Ecommerce and Store',
-              to: '/#',
-            },
-            {
-              title: 'Block Chain Devemopment',
-              to: '/#',
-            },
-          ],
+          icon: 'mdi-folder-image',
+          title: 'Photography Gallery',
+          to: '/gallery',
         },
+        // {
+        //   icon: 'mdi-tools',
+        //   title: 'Sherbimet tona',
+        //   to: '/services',
+        //   submenu: [
+        //     {
+        //       title: 'Services Page',
+        //       to: '/services',
+        //     },
+        //     {
+        //       title: 'Static Websites',
+        //       to: '/#',
+        //     },
+        //     {
+        //       title: 'Mobile Applications',
+        //       to: '/#',
+        //     },
+        //     {
+        //       title: 'Corporate websites',
+        //       to: '/#',
+        //     },
+        //     {
+        //       title: 'Editorial Sites',
+        //       to: '/#',
+        //     },
+        //     {
+        //       title: 'Ecommerce and Store',
+        //       to: '/#',
+        //     },
+        //     {
+        //       title: 'Block Chain Devemopment',
+        //       to: '/#',
+        //     },
+        //   ],
+        // },
         {
           icon: 'mdi-cash-usd',
-          title: 'Pricing',
+          title: 'Anna dekor',
           to: '/pricing',
         },
         {
           icon: 'mdi-folder-image',
-          title: 'Gallery',
+          title: 'Decor Gallery',
           to: '/gallery',
         },
-        {
-          icon: 'mdi-blogger',
-          title: 'Blog',
-          to: '/blog',
-        },
+        // {
+        //   icon: 'mdi-blogger',
+        //   title: 'Blog',
+        //   to: '/blog',
+        // },
         {
           icon: 'mdi-contacts',
           title: 'Contact',
