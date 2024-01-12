@@ -5,6 +5,7 @@
         <v-avatar color="primary" size="70" class="mb-8">
           <v-icon x-large dark>mdi-web</v-icon>
         </v-avatar>
+
         <h2 class="text-h4 text-md-h3 text-center font-weight-black mb-7">
           The Perfect Theme for Beginners or Professionals
         </h2>

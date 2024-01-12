@@ -9,7 +9,7 @@
               <h2
                 class="text-h4 text-md-h3 text-center font-weight-black text-capitalize"
               >
-                Who we are?
+                Kush jemi ne?
               </h2>
               <h3
                 class="text-h4 text-uppercase font-weight-thin text-center my-8"
@@ -101,6 +101,7 @@
             >
             </v-img>
           </v-col>
+
           <v-col cols="12" md="6" align-self="center">
             <div class="pa-lg-16 pa-md-10 px-4 py-16">
               <h2 class="text-h3 text-center font-weight-black">Our Mission</h2>
@@ -125,7 +126,6 @@
             </div>
           </v-col>
         </v-row>
-
         <SectionsTimeline />
       </v-col>
     </v-row>
@@ -139,7 +139,7 @@ export default {
       heroAlt: [
         {
           src: 'pexels-moose-photos-1036641.jpg',
-          heading: ' About Us ',
+          heading: ' Rreth nesh ',
         },
       ],
       ourTeam: [
