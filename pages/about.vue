@@ -11,50 +11,53 @@
               >
                 Kush jemi ne?
               </h2>
-              <h3
+              <!-- <h3
                 class="text-h4 text-uppercase font-weight-thin text-center my-8"
               >
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit
-              </h3>
+              </h3> -->
             </v-col>
             <v-col cols="12" md="6">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Anna Photographers është një biznes i themeluar me pasion dhe
+                vizion. Eksperienca e tij fillon në 3 mars 2016, kur u themelua
+                me qëllim të ofrimit të shërbimeve të fotografisë me një ndjesi
+                të veçantë artistike.
               </p>
               <blockquote class="text-h4 pa-5 my-4 font-weight-thin">
-                …Lorem Ipsum proin gravida nibh vel velit auctor aliquet. Aenean
-                sollicitudin, lorem quis
+                …The journey is never ending. There's always gonna be growth and
+                improvemen, you just gotta take it all in and do what's right,
+                continue to grow...
               </blockquote>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Në vitin 2019, Anna Photographers shënoi një hap të rëndësishëm
+                duke shtuar një risi të re në gamën e shërbimeve të ofruara:
+                dekorat festive.
               </p>
             </v-col>
             <v-col cols="12" md="6">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium. Doloremque laudantium, totam rem aperiam, eaque
-                ipsa quae ab illo inventore veritatis et quasi architecto beatae
-                vitae dicta sunt explicabo. emo enim ipsam voluptatem quia
-                voluptas sit aspernatur aut odit aut fugit, sed quia
-                consequuntur magni dolores eos qui ratione voluptatem sequi
-                nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
-                sit amet, consectetur, adipisci velit, sed quia non numquam eius
-                modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-                voluptatem. Nemo enim ipsam voluptatem quia voluptas sit
-                aspernatur aut odit aut fugit
+                Ky inovacion e bëri Anna Photographers të njohur për më shumë se
+                thjesht fotografi. Përveç punimeve të jashtëzakonshme
+                fotografike, kompania filloi të ofronte edhe dekore të
+                personalizuara për ngjarje të ndryshme. Kjo përfshin dekorime të
+                veçanta për festat e lindjes, dasmat, ngjarje korporatave dhe
+                çdo moment tjetër të rëndësishëm në jetën e klientëve. Ekipi i
+                Anna Photographers, duke pasur përparësi inovacionin dhe
+                përshtatjen me kërkesat e ndryshme të klientëve, ka zhvilluar
+                një koleksion të gjerë të dekoracioneve festive. Klientët kanë
+                mundësinë të zgjedhin nga gamë e gjerë e stileve dhe temave,
+                duke siguruar që çdo ngjarje të mbahet në një atmosferë
+                magjepsëse dhe të paharrueshme.
+              </p>
+              <p>
+                Me këtë zgjerim të shërbimeve, Anna Photographers dëshiron të
+                krijojë një përvojë të plotë për klientët e tyre, duke ofruar jo
+                vetëm imazhe të mrekullueshme, por edhe një atmosferë festive
+                dhe të kujdesit të plotë për çdo detaj. Nga fotografia te
+                dekorat festive, Anna Photographers është destinacioni i
+                përsosur për ata që dëshirojnë të mbajnë kujtimet e tyre në një
+                formë të veçantë dhe të bukur.
               </p>
             </v-col>
           </v-row>
@@ -144,67 +147,25 @@ export default {
       ],
       ourTeam: [
         {
-          name: 'John Churchill',
-          position: 'Marketing Director',
+          name: 'Flajdon Cenollari',
+          position: 'Photo Editor / Decor implementer',
           phone: '+1 (987) 1625346',
           email: 'john@example.com',
           photo: 'person-1.jpg',
         },
         {
-          name: 'Fiona	Ross',
-          position: 'Project Manager',
+          name: 'Anxhela Shkurta Cenollari',
+          position: 'Photograper / Decor planner / Photo-video editor',
           phone: '+1 (987) 5894684',
           email: 'fiona@example.com',
           photo: 'person-2.jpg',
         },
         {
-          name: 'Justin	Rees',
-          position: 'VP Marketing',
+          name: 'Rovina Shkurta Canollari',
+          position: 'Photographer / Decor planner / PR',
           phone: '+1 (987) 6982456',
           email: 'justin@example.com',
           photo: 'person-3.jpg',
-        },
-        {
-          name: 'Amelia	Ogden',
-          position: 'Communication Manager',
-          phone: '+1 (987) 6982456',
-          email: 'amelia@example.com',
-          photo: 'person-4.jpg',
-        },
-        {
-          name: 'Sebastian Bailey',
-          position: 'Advertising Director',
-          phone: '+1 (987) 6982456',
-          email: 'sebastian@example.com',
-          photo: 'person-5.jpg',
-        },
-        {
-          name: 'Eric Sutton',
-          position: 'Advertising Executive',
-          phone: '+1 (987) 6982456',
-          email: 'audrey@example.com',
-          photo: 'person-6.jpg',
-        },
-        {
-          name: 'Xia Yen',
-          position: 'Advertising Manager',
-          phone: '+1 (987) 6982456',
-          email: 'christian@example.com',
-          photo: 'person-7.jpg',
-        },
-        {
-          name: 'Bernadette	Springer',
-          position: 'Employee Relations Manager',
-          phone: '+1 (987) 6982456',
-          email: 'bernadette@example.com',
-          photo: 'person-8.jpg',
-        },
-        {
-          name: 'Elizabeth Newman',
-          position: 'Project Manager',
-          phone: '+1 (987) 6982456',
-          email: 'elizabeth@example.com',
-          photo: 'person-9.jpg',
         },
       ],
     }

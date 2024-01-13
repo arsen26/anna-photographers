@@ -7,12 +7,11 @@
       <v-row>
         <v-col>
           <h2 class="text-h4 text-sm-h3 text-capitalize font-weight-black mb-4">
-            Our Core Team
+            Skuadra
           </h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-            volutpat.
+            Kush perkujdeset ne prapaskene per detajet dhe persosmerine e
+            fotografive tuaja apo dekorit tuaj.
           </p>
         </v-col>
       </v-row>

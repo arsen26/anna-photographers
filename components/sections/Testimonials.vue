@@ -7,7 +7,7 @@
     <h2 class="text-h4 text-md-h3 text-center font-weight-black mb-8 my-8">
       Vlersime nga klientet
     </h2>
-    <v-col style="padding-top: 25px">
+    <v-col style="padding-top: 5px">
       <v-row>
         <div class="sk-ww-google-reviews" data-embed-id="25347530"></div>
         <script
