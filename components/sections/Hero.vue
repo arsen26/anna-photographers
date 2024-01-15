@@ -6,7 +6,7 @@
       cycle
       show-arrows-on-hover
       draggable="true"
-      hide-delimiter-background
+      hide-delimiters
     >
       <v-carousel-item
         v-for="(carousel, carindex) in carouselsData"

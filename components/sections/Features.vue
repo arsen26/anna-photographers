@@ -4,12 +4,12 @@
       <v-row>
         <v-col class="text-center">
           <h2 class="text-h4 text-md-h3 text-center font-weight-black">
-            Build your website with this Theme
+            3 Arsye
           </h2>
           <div
             class="text-h5 text-md-h4 text-center font-weight-black py-3 mb-10"
           >
-            Purchase now. Only $49!
+            Pse duhet te na zgjidhni ne?
           </div>
         </v-col>
       </v-row>
@@ -37,7 +37,7 @@
       </v-row>
       <v-row no-gutters>
         <v-btn x-large rounded color="white primary--text mx-auto mt-10 px-16">
-          <v-icon dark left> mdi-check-bold </v-icon>Buy It Now
+          <v-icon dark left> mdi-check-bold </v-icon>Rezervo tani setin tend
         </v-btn>
       </v-row>
     </v-container>
@@ -50,21 +50,21 @@ export default {
     return {
       cards: [
         {
-          title: 'Material Design',
+          title: 'Krijimi i Kujtimeve të Paharrueshme',
           subtitle: 'Best Productivity',
-          text: 'Similique sunt in culpa qui officia deserunt mollitia animi, id est laborut dolorum fuga.harum quidem rerum facilis estexpedita distinctio.',
+          text: 'Anna Photographers ofron një eksperiencë të jashtëzakonshme për të kapur momentet më të rëndësishme të jetës së klientëve nëpërmjet fotografive të profesionalizuara. Me një angazhim për përkushtim dhe një aftësi të lartë redaktimi, ne sigurojmë që çdo foto të shprehë bukurinë dhe emocionet e çastit.',
           callout: '01',
         },
         {
-          title: 'Affordable Prices',
+          title: 'Organizimi i Eventeve me Stil dhe Elegancë',
           subtitle: 'Special Offers',
-          text: 'Similique sunt in culpa qui officia deserunt mollitia animi, id est laborut dolorum fuga.harum quidem rerum facilis estexpedita distinctio.',
+          text: 'Nëse klientët dëshirojnë të bëjnë një ngjarje të tyre të veçantë, Anna Photographers është zgjedhja e duhur. Ne ofrojmë shërbim fotografik në evente të ndryshme, duke përfshirë dasmat, festat, dhe ngjarjet korporative. Përveç fotografisë së shkëlqyeshme, ofrojmë ndihmë në organizimin dhe dekorimin e eventeve, duke krijuar atmosfera të mrekullueshme dhe të paharrueshme.',
           callout: '02',
         },
         {
-          title: 'Fast Loading',
+          title: 'Cilesi dhe cmime te arsyeshme',
           subtitle: 'Income Flow',
-          text: 'Similique sunt in culpa qui officia deserunt mollitia animi, id est laborut dolorum fuga.harum quidem rerum facilis estexpedita distinctio.',
+          text: 'Anna Photographers ofron një ambient të veçantë, një studjo fotografike e pajisur me teknologji të fundit për të krijuar sete të personalizuara për fotografi unike. Përkrahur nga një ekip profesionist dhe me aftësi të jashtëzakonshme në editim, ne shndërrojmë çdo set fotografik në një eksperiencë të veçantë. Cmimet e arsyeshme bëjnë që ky eksperiencë të jetë e arritshme për të gjithë ata që dëshirojnë të ruajnë kujtime të paharrueshme nga momentet e tyre të veçanta.',
           callout: '03',
         },
       ],
