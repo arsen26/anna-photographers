@@ -5,16 +5,16 @@
         v-for="(plan, ix) in teDhenat"
         :key="`plan-${ix}`"
         cols="12"
-        md="4"
+        md="6"
+        lg="6"
       >
         <v-hover v-slot="{ hover }">
           <v-card
             :elevation="hover ? 24 : plan.elevation"
-            max-width="400"
+            max-width="600"
             :class="hover ? 'zoom' : 'notzoom'"
             class="mx-auto transition-swing"
-            height="200"
-            title="Card title"
+            height="600"
             theme="dark"
           >
             <!-- Check if the index is 0 before rendering the video -->
@@ -23,10 +23,15 @@
               autoplay
               muted
               loop
-              style="width: 100%; height: 100%; object-fit: cover"
+              style="width: 100%; height: 100%; object-fit: cover; z-index: -1"
             >
               <source src="photographyVideo.mp4" type="video/mp4" />
             </video>
+            <!-- <v-card-title style="background-color: transparent">{{
+              plan.title
+            }}</v-card-title>
+            <v-card-subtitle>{{ plan.description }}</v-card-subtitle> -->
+
             <video
               v-if="ix === 1"
               autoplay
