@@ -8,8 +8,13 @@
         md="6"
         lg="6"
       >
-        <v-hover v-slot="{ hover }">
+        <v-hover v-slot="{ hover }" class="card-container">
           <v-card
+            style="
+              align-items: center;
+              justify-content: center;
+              position: relative;
+            "
             :elevation="hover ? 24 : plan.elevation"
             max-width="600"
             :class="hover ? 'zoom' : 'notzoom'"
@@ -17,37 +22,48 @@
             height="600"
             theme="dark"
           >
-            <!-- Check if the index is 0 before rendering the video -->
+            <!-- Your video and overlay styles -->
             <video
-              v-if="ix === 0"
               autoplay
               muted
               loop
               style="width: 100%; height: 100%; object-fit: cover; z-index: -1"
             >
-              <source src="photographyVideo.mp4" type="video/mp4" />
+              <source :src="plan.src" type="video/mp4" />
             </video>
-            <!-- <v-card-title style="background-color: transparent">{{
-              plan.title
-            }}</v-card-title>
-            <v-card-subtitle>{{ plan.description }}</v-card-subtitle> -->
+            <div
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+              "
+            ></div>
 
-            <video
-              v-if="ix === 1"
-              autoplay
-              muted
-              loop
-              style="width: 100%; height: 100%; object-fit: cover"
+            <v-row
+              class="d-flex justify-center align-center"
+              style="height: 100%"
             >
-              <source src="decorVideo.mp4" type="video/mp4" />
-            </video>
+              <v-card-title class="title-style">
+                {{ plan.title }}
+              </v-card-title>
+
+              <v-card-subtitle class="description-style">
+                {{ plan.description }}
+              </v-card-subtitle>
+
+              <v-row class="d-flex justify-center button-style">
+                <v-btn> Zbulo me teper </v-btn>
+              </v-row>
+            </v-row>
           </v-card>
         </v-hover>
       </v-col>
     </v-row>
   </v-container>
 </template>
-
 <script>
 export default {
   data() {
@@ -55,16 +71,19 @@ export default {
       teDhenat: [
         {
           title: 'ANNA PHOTOGRAPHERS',
-          description: 'test test test',
+          description:
+            'Ne jemi destinacioni juaj i duhur për sesione fotografike magjike. ',
           elevation: 16,
           button: 'me kliko per me teper informacjone',
           src: 'photographyVideo.mp4',
         },
         {
           title: 'ANNA DECOR',
-          description: 'test test test',
+          description:
+            'Perjeto magjine e shnderrimit te imagjinates ne realitet',
           elevation: 16,
           button: 'me kliko per me teper informacjone',
+          src: 'decorVideo.mp4',
         },
       ],
     }
@@ -73,13 +92,44 @@ export default {
 </script>
 
 <style scoped>
-.video-background {
+.title-style {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Raleway', sans-serif;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 72px;
+  margin: 0 0 24px;
+  text-align: center;
+  top: 180px;
+  text-transform: uppercase;
+}
+.description-style {
+  position: absolute;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.9); /* Red color with 50% opacity */
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  margin: 0 0 24px;
+  text-align: center;
+  top: 260px;
+  text-transform: uppercase;
+}
+
+.button-style {
+  position: absolute;
+  top: 360px; /* Adjust the top position based on your layout */
+  background-color: transparent;
+  text-align: center;
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+.button-style:hover {
+  transform: scale(1.1);
+}
+.card-container:hover {
+  transform: scale(1.05);
 }
 </style>
