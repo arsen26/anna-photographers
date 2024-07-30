@@ -15,6 +15,8 @@
         class="gradient-fill"
       >
         <v-container fill-height>
+          <img v-lazy="carousel.src" class="carousel-image" />
+
           <div style="max-width: 600px">
             <div
               class="text-md-h2 mb-3 text-sm-h3 text-h5 font-weight-black white--text"
@@ -22,7 +24,11 @@
               {{ carousel.heading.toUpperCase() }}
             </div>
             <p class="mb-5 white--text">{{ carousel.subHeading }}</p>
-            <v-btn :x-large="$vuetify.breakpoint.smAndUp" class="my-3 primary">
+            <v-btn
+              :x-large="$vuetify.breakpoint.smAndUp"
+              style="background-color: #ef476f"
+              class="my-3"
+            >
               <v-icon left large color="white">mdi-phone</v-icon>
               Rezervoni tani</v-btn
             >
@@ -33,8 +39,8 @@
               class="my-3"
               outlined
               dark
-              ><v-icon left large color="primary">mdi-instagram</v-icon>Prova
-              teknike</v-btn
+              ><v-icon left large color="#ef476f">mdi-instagram</v-icon
+              >Instagram</v-btn
             >
           </div>
         </v-container>

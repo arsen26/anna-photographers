@@ -17,7 +17,12 @@
       </v-row>
       <v-row>
         <v-col v-for="(item, i) in ourTeam" :key="`person-${i}`">
-          <v-sheet class="py-12 px-6" outlined shaped>
+          <v-sheet
+            class="py-12 px-6"
+            style="height: 550px !important; padding-bottom: 400px !important"
+            outlined
+            shaped
+          >
             <v-avatar size="240"
               ><img
                 :src="`/team/${item.photo}`"
@@ -31,7 +36,12 @@
               {{ item.position }}
             </div>
             <div class="text-h6 font-weight-black mt-8">{{ item.phone }}</div>
-            <div class="subtitle-1 mt-3">{{ item.email }}</div>
+            <div
+              class="subtitle-1 mt-3 email-at-teammember"
+              @click="sendToEmail(item.email)"
+            >
+              {{ item.email }}
+            </div>
           </v-sheet>
         </v-col>
       </v-row>
@@ -47,5 +57,17 @@ export default {
       default: () => [],
     },
   },
+  methods: {
+    sendToEmail(person) {
+      // console.log(person, '=-=>> person')
+      window.open(`mailto:${person.email}`)
+    },
+  },
 }
 </script>
+
+<style scoped>
+.email-at-teammember {
+  cursor: pointer;
+}
+</style>

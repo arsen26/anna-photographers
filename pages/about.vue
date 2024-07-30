@@ -64,67 +64,27 @@
         </v-container>
         <SectionsTeam :our-team="ourTeam" />
 
-        <v-row no-gutters>
+        <v-row v-for="(items, index) in ourVision" :key="index" no-gutters>
           <v-col cols="12" md="6" align-self="center">
             <v-img
               max-height="800"
-              src="pexels-canva-studio-3277806.jpg"
+              :src="items.photo"
               lazy-src="pexels-canva-studio-3277806.jpg"
             >
             </v-img>
           </v-col>
           <v-col cols="12" md="6" align-self="center">
             <div class="pa-lg-16 pa-md-10 px-4 py-16">
-              <h2 class="text-h3 text-center font-weight-black">Our Vision</h2>
+              <h2 class="text-h3 text-center font-weight-black">
+                {{ items.title }}
+              </h2>
               <h3
                 class="text-h5 text-uppercase font-weight-thin text-center my-8"
               >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                {{ items.subtitle }}
               </h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium. Doloremque laudantium, totam rem aperiam.
-              </p>
-            </div>
-          </v-col>
-        </v-row>
-        <v-row no-gutters class="flex-row-reverse">
-          <v-col cols="12" md="6" align-self="center">
-            <v-img
-              max-height="800"
-              src="pexels-rfstudio-3810792.jpg"
-              lazy-src="pexels-rfstudio-3810792.jpg"
-            >
-            </v-img>
-          </v-col>
-
-          <v-col cols="12" md="6" align-self="center">
-            <div class="pa-lg-16 pa-md-10 px-4 py-16">
-              <h2 class="text-h3 text-center font-weight-black">Our Mission</h2>
-              <h3
-                class="text-h5 text-uppercase font-weight-thin text-center my-8"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit
-              </h3>
-              <p>
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est
-                laborum. Sed ut perspiciatis unde omnis iste natus error sit
-                voluptatem accusantium. Doloremque laudantium, totam rem
-                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                architecto beatae vitae dicta sunt explicabo. emo enim ipsam
-                voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
-                quia consequuntur magni dolores eos
+                {{ items.description }}
               </p>
             </div>
           </v-col>
@@ -150,22 +110,31 @@ export default {
           name: 'Flajdon Cenollari',
           position: 'Photo Editor / Decor implementer',
           phone: '+1 (987) 1625346',
-          email: 'john@example.com',
+          email: 'flajdon@gmail.com',
           photo: 'person-1.jpg',
         },
         {
           name: 'Anxhela Shkurta Cenollari',
           position: 'Photograper / Decor planner / Photo-video editor',
           phone: '+1 (987) 5894684',
-          email: 'fiona@example.com',
+          email: 'anxhir.as@gmail.com',
           photo: 'person-2.jpg',
         },
         {
           name: 'Rovina Shkurta Canollari',
           position: 'Photographer / Decor planner / PR',
           phone: '+1 (987) 6982456',
-          email: 'justin@example.com',
+          email: 'rovinacanollari@gmail.com',
           photo: 'person-3.jpg',
+        },
+      ],
+      ourVision: [
+        {
+          title: 'Our Vision',
+          subtitle: 'Our Vision Subtitle',
+          photo: 'pexels-canva-studio-3277806.jpg',
+          description:
+            ' Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium. Doloremque laudantium, totam rem aperiam. ',
         },
       ],
     }

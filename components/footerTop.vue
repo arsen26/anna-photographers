@@ -32,7 +32,8 @@
                   <v-list-item-content>
                     <v-list-item-title>ADDRESS</v-list-item-title>
                     <v-list-item-subtitle
-                      >1400 Main Street, Orlando, FL 79938</v-list-item-subtitle
+                      >Rruga Thoma Koxhaj, Pallatet Cabej, tek kmy-ja e
+                      vogel.</v-list-item-subtitle
                     >
                   </v-list-item-content>
                 </v-list-item>

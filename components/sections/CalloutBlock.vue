@@ -12,13 +12,11 @@
         <v-col>
           <v-row no-gutters>
             <v-col cols="12" sm="7" class="text-center">
-              <h2
-                class="text-h4 text-md-h3 text-center font-weight-black text-capitalize mb-4"
-              >
+              <h2 class="follow-us-on-social-title">
                 Na ndiqni ne rrjetet sociale
               </h2>
 
-              <p>
+              <p style="color: #f78c6b">
                 Ndiqeni live punen tone, ne rrjetet tona sociale per te marre
                 perditesimet me te fundit rreth nesh.
               </p>
@@ -31,7 +29,7 @@
                   class="d-flex"
                   icon
                   large
-                  color="primary"
+                  color="#f78c6b"
                   :href="socialm.link"
                   target="_blank"
                 >
@@ -56,11 +54,11 @@ export default {
           link: 'https://www.facebook.com/',
           icon: 'mdi-facebook',
         },
-        {
-          platform: 'TikTok',
-          link: 'https://twitter.com/',
-          icon: 'mdi-tiktok',
-        },
+        // {
+        //   platform: 'TikTok',
+        //   link: 'https://twitter.com/',
+        //   icon: 'mdi-tik-tok',
+        // },
         {
           platform: 'Instagram',
           link: 'https://www.instagram.com/',
@@ -69,7 +67,7 @@ export default {
         {
           platform: 'Youtube',
           link: 'https://www.linkedin.com/',
-          icon: 'mdi-linkedin',
+          icon: 'mdi-youtube',
         },
         // {
         //   platform: 'Github',
@@ -81,3 +79,10 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.follow-us-on-social-title {
+  font-size: 45px;
+  color: #f78c6b;
+}
+</style>

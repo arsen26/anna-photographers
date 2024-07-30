@@ -2,7 +2,7 @@
   <section id="intro" class="py-16">
     <v-container>
       <v-responsive class="max-auto mx-auto text-center" max-width="600">
-        <v-avatar color="primary" size="70" class="mb-8">
+        <v-avatar color="#ef476f" size="70" class="mb-8">
           <v-icon x-large dark>mdi-camera</v-icon>
         </v-avatar>
 
@@ -35,8 +35,8 @@
             </v-col>
             <v-col v-if="card.callout" cols="2">
               <span
-                class="text-h3 grey--text font-weight-bold pr-8"
-                style="opacity: 0.1"
+                class="text-h3 font-weight-bold"
+                style="opacity: 0.2; color: #ef476f"
                 >{{ card.callout }}</span
               >
             </v-col>

@@ -1,5 +1,5 @@
 <template>
-  <section class="primary darken-1 white--text py-16">
+  <section class="section-container-style darken-1 white--text py-16">
     <v-container>
       <v-row>
         <v-col class="text-center">
@@ -23,7 +23,7 @@
         >
           <v-avatar
             size="80"
-            class="display-1 white font-weight-bold primary--text mb-5"
+            class="display-1 white font-weight-bold number-style mb-5"
             style="opacity: 1.15"
             >{{ card.callout }}</v-avatar
           >
@@ -36,7 +36,7 @@
         </v-col>
       </v-row>
       <v-row no-gutters>
-        <v-btn x-large rounded color="white primary--text mx-auto mt-10 px-16">
+        <v-btn x-large rounded color="white button-text mx-auto mt-10 px-16">
           <v-icon dark left> mdi-check-bold </v-icon>Rezervo tani setin tend
         </v-btn>
       </v-row>
@@ -72,3 +72,15 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.button-text {
+  color: #ef476f;
+}
+.number-style {
+  color: #ef476f;
+}
+.section-container-style {
+  background-color: #073b4c;
+}
+</style>
