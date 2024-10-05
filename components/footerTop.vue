@@ -134,13 +134,13 @@ export default {
         },
         {
           platform: 'TikTok',
-          link: 'https://www.tiktok.com/', // Korrigjim i lidhjes për TikTok
+          link: 'https://www.tiktok.com/@annaphotographers', // Korrigjim i lidhjes për TikTok
           icon: require('@/static/tiktokL.svg'), // Ikona e TikTok
           className: 'bxl-tiktok', // Klasë për TikTok (ndryshimi nga bxl-twitter)
         },
         {
           platform: 'Instagram',
-          link: 'https://www.instagram.com/',
+          link: 'https://www.instagram.com/annaphotographers/',
           icon: 'mdi-instagram',
           className: 'bxl-instagram', // Klasë për Instagram
         },
