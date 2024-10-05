@@ -33,10 +33,10 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-app-bar fixed app hide-on-scroll height="64" elevate-on-scroll>
+    <!--MOBILE VIEW-->
+    <v-app-bar fixed app hide-on-scroll height="74" elevate-on-scroll>
       <v-app-bar-nav-icon class="hidden-md-and-up" @click="drawer = true" />
-      <nuxt-link to="/" class="d-flex"> </nuxt-link>
-      <v-img :width="40" :height="70" aspect-ratio="16/9" :src="image"> </v-img>
+      <v-img class="logo-style-menu" :src="image"> </v-img>
       <v-spacer />
       <template v-for="(name, menuitem) in items">
         <template v-if="name.submenu">
@@ -188,6 +188,15 @@ export default {
 </script>
 
 <style scoped>
+.logo-style-menu {
+  height: auto !important;
+  width: auto;
+  max-height: 70px;
+  max-width: 100px;
+  object-fit: contain !important;
+  margin-left: 100px;
+}
+
 .submenubtn {
   cursor: default;
 }

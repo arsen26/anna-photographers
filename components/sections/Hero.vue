@@ -1,5 +1,5 @@
 <template>
-  <section id="hero">
+  <section id="hero" class="carousel-section">
     <v-carousel
       height="calc(100vh - 64px)"
       dark
@@ -26,7 +26,7 @@
             <p class="mb-5 white--text">{{ carousel.subHeading }}</p>
             <v-btn
               :x-large="$vuetify.breakpoint.smAndUp"
-              style="background-color: #ef476f"
+              style="background-color: #ef476f; color: white"
               class="my-3"
             >
               <v-icon left large color="white">mdi-phone</v-icon>
@@ -84,7 +84,10 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.carousel-section {
+  margin-top: -25px;
+}
 .gradient-fill .v-responsive__content {
   background: rgb(0, 0, 0);
   background: linear-gradient(

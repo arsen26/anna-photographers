@@ -22,7 +22,7 @@ export default {
       },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon/annalogo.ico' },
       { rel: 'manifest', href: '/site.webmanifest' },
     ],
   },

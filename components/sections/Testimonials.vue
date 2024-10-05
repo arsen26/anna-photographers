@@ -8,13 +8,15 @@
       Vlersime nga klientet
     </h2>
     <v-col style="padding-top: 5px">
-      <v-row>
-        <div class="sk-ww-google-reviews" data-embed-id="25347530"></div>
+      <v-row class="review-style">
         <script
-          src="https://widgets.sociablekit.com/google-reviews/widget.js"
+          src="https://static.elfsight.com/platform/platform.js"
           async
-          defer
-        ></script></v-row
+        ></script>
+        <div
+          class="elfsight-app-c960d5b6-f846-4145-b538-4a1f48bc510f"
+          data-elfsight-app-lazy
+        ></div></v-row
     ></v-col>
   </section>
 </template>
@@ -54,3 +56,10 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.review-style {
+  align-items: center;
+  justify-content: center;
+}
+</style>
