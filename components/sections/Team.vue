@@ -9,10 +9,18 @@
           <h2 class="text-h4 text-sm-h3 text-capitalize font-weight-black mb-4">
             Skuadra
           </h2>
-          <p>
-            Kush perkujdeset ne prapaskene per detajet dhe persosmerine e
-            fotografive tuaja apo dekorit tuaj.
-          </p>
+          <p>Kush përkujdeset për detajet dhe përsosmëritë?</p>
+          <div>
+            <p>
+              Ekipi ynë i profesionistëve është përgjegjës për të siguruar që
+              çdo detaj të jetë i përsosur.
+            </p>
+            <p>
+              Ne merremi me çdo aspekt të fotografive tuaja dhe dekorit, duke u
+              siguruar që çdo imazh dhe çdo element dekorativ të jetë i
+              përshtatur dhe i realizuar në mënyrën më të mirë të mundshme.
+            </p>
+          </div>
         </v-col>
       </v-row>
       <v-row>
