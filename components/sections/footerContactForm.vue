@@ -18,14 +18,13 @@
       rows="8"
       row-height="20"
     ></v-textarea>
-    <v-btn outlined block color="primary" @click="sendEmail"
-      >SEND MESSAGE</v-btn
-    >
+    <v-btn outlined block color="primary" @click="sendEmail">SEND EMAIL</v-btn>
   </v-form>
 </template>
 
 <script>
-import emailjs from 'emailjs-com'
+import emailjs from 'emailjs-com' // keep it as is unless switching to named imports
+
 export default {
   data() {
     return {
@@ -33,15 +32,15 @@ export default {
       tel: '',
       email: '',
       subject: '',
-      message: '', // për modelin e mesazhit
+      message: '',
     }
   },
   methods: {
     async sendEmail() {
       try {
         await emailjs.send(
-          'service_u1ay0hb', // ID e shërbimit
-          'template_09pnylp', // ID e templates
+          'service_u1ay0hb',
+          'template_09pnylp',
           {
             name: this.name,
             email: this.email,
@@ -49,21 +48,23 @@ export default {
             telephone: this.tel,
             message: this.message,
           },
-          '2ydcucD9DD2LytKdw' // Çelësi publik
+          '2ydcucD9DD2LytKdw'
         )
 
-        alert('EMAIL SENT SUCCESSFULLY') // Njofto përdoruesin për dërgimin e emailit
+        alert('EMAIL SENT SUCCESSFULLY')
       } catch (err) {
-        console.error('Error sending email:', err) // Printo gabimin në konsolë
-        alert('Error sending email: ' + err.message) // Trego një mesazh gabimi përdoruesit
+        // console.error('Error sending email:', err); // Uncomment for debugging
+        alert('Error sending email: ' + err.message)
       }
 
-      // Pastro fushat pas dërgimit
+      this.clearFields() // Clear fields after sending email
+    },
+    clearFields() {
       this.name = ''
       this.email = ''
       this.tel = ''
-      this.message = ''
       this.subject = ''
+      this.message = ''
     },
   },
 }

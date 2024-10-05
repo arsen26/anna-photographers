@@ -2,3 +2,19 @@
 //
 // The variables you want to modify
 // $font-size-root: 20px;
+// variables.scss
+
+// Modifikoni variablat e Vuetify këtu
+$font-size-root: 20px; // Ndryshoni madhësinë e shkrimit të rrënjës
+$font-size-sm: 0.875rem; // Madhësia e shkrimit për elementet e vogla
+$font-size-md: 1rem; // Madhësia e shkrimit për elementet mesatar
+$font-size-lg: 1.125rem; // Madhësia e shkrimit për elementet të mëdha
+
+// Ngjyrat
+$primary: #1976D2; // Ngjyra primare
+$secondary: #FFC107; // Ngjyra dytësore
+$accent: #82B1FF; // Ngjyra e akcentit
+$error: #FF5252; // Ngjyra për gabime
+$info: #2196F3; // Ngjyra për informacion
+$success: #4CAF50; // Ngjyra për sukses
+$warning: #FFC107; // Ngjyra për paralajmërime
